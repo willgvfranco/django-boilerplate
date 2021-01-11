@@ -31,6 +31,15 @@ python manage.py runserver # For dev
 python manage.py runserver --settings=backend.settings.prod # For production envs
 ```
 
+## Languages and libs used :books:
+
+- [Python 3.X] (https://www.python.org/)
+- [Django](https://www.djangoproject.com/)
+- [Django Admin Honeypot] (https://pypi.org/project/django-admin-honeypot/)
+- [Bootstrap4] (https://pypi.org/project/django-bootstrap4/)
+- [Postgresql] (https://pypi.org/project/psycopg2/)
+- [Decouple] (https://pypi.org/project/python-decouple/)
+
 ## Author
 
 👤 **William Franco**
