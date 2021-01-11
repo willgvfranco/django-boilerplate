@@ -33,21 +33,21 @@ python manage.py runserver --settings=backend.settings.prod # For production env
 
 ## Languages and libs used :books:
 
-- [Python 3.X] (https://www.python.org/)
+- [Python3](https://www.python.org/)
 - [Django](https://www.djangoproject.com/)
-- [Django Admin Honeypot] (https://pypi.org/project/django-admin-honeypot/)
-- [Bootstrap4] (https://pypi.org/project/django-bootstrap4/)
-- [Postgresql] (https://pypi.org/project/psycopg2/)
-- [Decouple] (https://pypi.org/project/python-decouple/)
+- [Django Admin Honeypot](https://pypi.org/project/django-admin-honeypot/)
+- [Bootstrap4](https://pypi.org/project/django-bootstrap4/)
+- [Postgresql](https://pypi.org/project/psycopg2/)
+- [Decouple](https://pypi.org/project/python-decouple/)
+
 
 ## Author
 
 👤 **William Franco**
 
-* Website: http://neustren.com.br
+* Website: http://neustren.org
 * Twitter: [@neustren](https://twitter.com/neustren)
 * Github: [@neustren](https://github.com/neustren)
-* LinkedIn: [@neustren](https://linkedin.com/in/neustren)
 
 ## Show your support
 
