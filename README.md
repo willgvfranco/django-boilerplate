@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to Django Boilerplate with Simple Security Config. 👋</h1>
+<h1 align="center">Welcome to Django Boilerplate w/ Basic Security Config. 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
   <a href="#" target="_blank">
@@ -11,6 +11,7 @@
 
 > Django boilerplate with security configured and env keys hidden. Good for your django/python learning courses.
 > Comes with admin_honeypot, bootstrap4 and configurations for Portuguese-BR template.
+> Also, postgresql prepared connection and easy base.py (default) or prod.py for import applications without touch the settings.py.
 
 ## Install
 
@@ -21,7 +22,7 @@ source venv/bin/activate # GNU/Linux
 pip install -r requirements.txt
 python manage.py makemigrations
 python manage.py migrate
-cp example.env .env # copy example.env to .env file
+cp example.env .env # create your .env with new django key and DB settings
 ```
 
 ## Usage
@@ -30,6 +31,15 @@ cp example.env .env # copy example.env to .env file
 python manage.py runserver # For dev
 python manage.py runserver --settings=backend.settings.prod # For production envs
 ```
+
+## Aditional configs - More explained
+
+```sh
+git remote remove origin # start your own repository
+python manage.py createsuperuser # create user for admin
+localhost:8000/neuadmin # change your new url in urls.py, the /admin is fake
+```
+
 
 ## Languages and libs used :books:
 
