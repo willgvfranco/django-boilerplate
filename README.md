@@ -1,6 +1,6 @@
-<h1 align="center">Welcome to Django Boilerplate w/ Basic Security Config. 👋</h1>
+<h1 align="center">Welcome to Django Boilerplate w/ Security Config. 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.1-blue.svg?cacheSeconds=2592000" />
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
@@ -9,9 +9,13 @@
   </a>
 </p>
 
+## Intro
+
 > Django boilerplate with security configured and env keys hidden. Good for your django/python learning courses.
-> Comes with admin_honeypot, bootstrap4 and configurations for Portuguese-BR template.
-> Also, postgresql prepared connection and easy base.py (default) or prod.py for import applications without touch the settings.py.
+> Comes with bootstrap4 and configurations for Portuguese-BR template (easily change).
+> Also, postgresql prepared connection.
+> Comes with a base.py (overriding your settings.py) or prod.py (overriding base.py) with more security and importing your .env production variables.
+> X_FRAME, HSTS, Nosniff, XSS_filter, CSRF, honeypot and protection against bruteforce pre-configured
 
 ## Install
 
@@ -49,9 +53,12 @@ localhost:8000/neuadmin # change your new url in urls.py, the /admin is fake
 - [Bootstrap4](https://pypi.org/project/django-bootstrap4/)
 - [Postgresql](https://pypi.org/project/psycopg2/)
 - [Decouple](https://pypi.org/project/python-decouple/)
+- [Axes](https://django-axes.readthedocs.io/en/latest/#)
+
 
 
 ## Author
+
 
 👤 **William Franco**
 

@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 from .settings import *
 from decouple import config
+from django.contrib.messages import constants
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -74,6 +75,27 @@ CSRF_COOKIE_HTTPONLY = True
 X_FRAME_OPTIONS = 'DENY'
 
 
-INSTALLED_APPS += ('admin_honeypot', 'bootstrap4', 'frontend', )
+INSTALLED_APPS += ('admin_honeypot', 'bootstrap4', 'frontend', 'axes',)
 
-MIDDLEWARE += ('')
+MIDDLEWARE += ('axes.middleware.AxesMiddleware',)
+
+
+# VIEW.PY => messages.success(self.request, 'Success!') // from django.contrib import messages
+# Template.html => {% include "partials/_messages.html" %}
+MESSAGE_TAGS = {
+    constants.ERROR: 'alert-danger',
+    constants.WARNING: 'alert-warning',
+    constants.INFO: 'alert-info',
+    constants.SUCCESS: 'alert-success',
+    constants.DEBUG: 'alert-info',
+}
+
+AUTHENTICATION_BACKENDS = [
+    'axes.backends.AxesBackend',
+    'django.contrib.auth.backends.ModelBackend',
+]
+
+AXES_FAILURE_LIMIT = 10
+
+AXES_ENABLED = False
+# python manage.py axes_reset
