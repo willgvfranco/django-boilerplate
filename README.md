@@ -14,8 +14,15 @@
 > Django boilerplate with security configured and env keys hidden. Good for your django/python learning courses.
 > Comes with bootstrap4 and configurations for Portuguese-BR template (easily change).
 > Also, postgresql prepared connection.
-> Comes with a base.py (overriding your settings.py) or prod.py (overriding base.py) with more security and importing your .env production variables.
 > X_FRAME, HSTS, Nosniff, XSS_filter, CSRF, honeypot and protection against bruteforce pre-configured
+
+## How it works
+
+> base.py overrides settings.py for development (default runserver)
+
+> prod.py overrides base.py for production
+
+> All secure keys and passwords are in example.env
 
 ## Install
 
